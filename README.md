@@ -4,3 +4,4 @@ Algorithms implemented so far . . .
 - quicksort
 - BFS/DFS
 - Binary search
+- Palindrome finder
