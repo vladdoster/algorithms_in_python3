@@ -1,4 +1,4 @@
-# [Deprecated] Popular algorithms implemented in Python3. Enjoy!
+# Code I have written to prepare for interviews
 
 Algorithms implemented:
 - BFS/DFS
