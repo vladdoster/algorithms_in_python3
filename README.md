@@ -3,6 +3,7 @@
 Algorithms implemented:
 - BFS/DFS
 - Binary search
+- Factorial
 - Knapsack
 - Palindrome finder
 - Quicksort
