@@ -40,3 +40,11 @@ This is a useful hook to run scripts that help enforce development policies.
 Finally, **post-receive hook** in the repository is invoked after the updates have been accepted into the destination repository. This is an ideal place to configure simple deployment scripts, invoke some continuous integration systems, dispatch notification emails to repository maintainers, etc.
 
 **Hooks are local to every Git repository and are not versioned**. Scripts can either be created within the hooks directory inside the “.git” directory, or they can be created elsewhere and links to those scripts can be placed within the directory.
+
+### Jenkins
+
+#### Results
+[HtmlPublisher](https://wiki.jenkins.io/display/JENKINS/HTML+Publisher+Plugin) plugin is useful to publish the html reports that your build generates to the job and build pages.
+
+#### Backups
+To create a backup, all you need to do is to periodically back up your JENKINS_HOME directory. This contains all of your build jobs configurations, your slave node configurations, and your build history. To create a back-up of your Jenkins setup, just copy this directory. You can also copy a job directory to clone or replicate a job or rename the directory.
