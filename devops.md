@@ -16,6 +16,8 @@
 - Who introduced an issue and when.
 
 #### Branching styles:
+---------------------------------------------
+
 ##### Feature branching
 A feature branch model keeps all of the changes for a particular feature inside of a branch. 
 When the feature is fully tested and validated by automated tests, the branch is then merged into master.
@@ -28,6 +30,8 @@ Creating this branch starts the next release cycle, so no new features can be ad
 Once it is ready to ship, the release gets merged into master and tagged with a version number. In addition, it should be merged back into develop branch, which may have progressed since the release was initiated.
 
 #### Commit Hooks
+---------------------------------------------
+
 There are three ways to configure a script to run every time a repository receives new commits through push, one needs to define either a pre-receive, update, or a post-receive hook depending on when exactly the script needs to be triggered.
 
 Pre-receive hook in the destination repository is invoked when commits are pushed to it. Any script bound to this hook will be executed before any references are updated.
