@@ -73,6 +73,20 @@ Handlers: Used to trigger service status changes, like restarting or stopping a 
 ansible -m setup hostname
 ```
 
+### Nagios
+#### Active checks
+Active checks are initiated and performed by Nagios
+
+- Active checks are initiated by the Nagios process.
+- Active checks are run on a regularly scheduled basis.
+
+#### Passive checks
+They are initiated and performed by external applications/processes and the Passive check results are submitted to Nagios for processing.
+
+Useful when:
+- Asynchronous in nature and cannot be monitored effectively by polling their status on a regularly scheduled basis.
+- Located behind a firewall and cannot be checked actively from the monitoring host.
+
 ### Selenium
 Supports II types of testing:
 
