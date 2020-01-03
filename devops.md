@@ -55,7 +55,7 @@ To create a backup, all you need to do is to periodically back up your JENKINS_H
 
 **Inventory**: An initialization file that contains information about the servers you are managing.
 
-**Playbook**: The entry point for Ansible provisioning, where the automation is defined through tasks using YAML format.
+**Playbook**: The entry point for Ansible provisioning, where the automation is defined through tasks using YAML format. At a basic level, playbooks can be used to manage configurations of and deployments to remote machines.
 
 **Task**: A block that defines a single procedure to be executed, e.g. Install a package.
 
@@ -67,6 +67,11 @@ To create a backup, all you need to do is to periodically back up your JENKINS_H
 
 **Facts**: Global variables containing information about the system, like network interfaces or operating system.
 Handlers: Used to trigger service status changes, like restarting or stopping a service.
+
+#### Useful Ansible commands
+```
+ansible -m setup hostname
+```
 
 ### Selenium
 Supports II types of testing:
