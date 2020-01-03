@@ -7,7 +7,8 @@
 ---------------------------------------------
 </div>
 
-### Version control:
+### Version control
+---------------------------------------------
 
 - Revert files back to a previous state.
 - Revert the entire project back to a previous state.
@@ -16,7 +17,6 @@
 - Who introduced an issue and when.
 
 #### Branching styles:
----------------------------------------------
 
 ##### Feature branching
 A feature branch model keeps all of the changes for a particular feature inside of a branch. 
@@ -29,8 +29,7 @@ Once the develop branch has acquired enough features for a release, you can clon
 Creating this branch starts the next release cycle, so no new features can be added after this point, only bug fixes, documentation generation, and other release-oriented tasks should go in this branch.
 Once it is ready to ship, the release gets merged into master and tagged with a version number. In addition, it should be merged back into develop branch, which may have progressed since the release was initiated.
 
-#### Commit Hooks
----------------------------------------------
+#### Commit Hooks:
 
 There are three ways to configure a script to run every time a repository receives new commits through push, one needs to define either a pre-receive, update, or a post-receive hook depending on when exactly the script needs to be triggered.
 
