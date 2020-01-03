@@ -67,3 +67,10 @@ To create a backup, all you need to do is to periodically back up your JENKINS_H
 
 **Facts**: Global variables containing information about the system, like network interfaces or operating system.
 Handlers: Used to trigger service status changes, like restarting or stopping a service.
+
+### Selenium
+Supports II types of testing:
+
+**Regression Testing**: It is the act of retesting a product around an area where a bug was fixed.
+
+**Functional Testing**: It refers to the testing of software features (functional points) individually.
