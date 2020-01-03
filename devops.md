@@ -4,7 +4,6 @@
 
 ### Some of these are obvious, but some aren't
 
----------------------------------------------
 </div>
 
 ### Version control
