@@ -34,12 +34,11 @@ Once it is ready to ship, the release gets merged into master and tagged with a 
 
 There are three ways to configure a script to run every time a repository receives new commits through push, one needs to define either a pre-receive, update, or a post-receive hook depending on when exactly the script needs to be triggered.
 
-Pre-receive hook in the destination repository is invoked when commits are pushed to it. Any script bound to this hook will be executed before any references are updated.
+**Pre-receive hook** in the destination repository is invoked when commits are pushed to it. Any script bound to this hook will be executed before any references are updated.
 This is a useful hook to run scripts that help enforce development policies.
 
-Update hook works in a similar manner to pre-receive hook, and is also triggered before any updates are actually made.
-However, the update hook is called once for every commit that has been pushed to the destination repository.
+**Update hook** works in a similar manner to pre-receive hook, and is also triggered before any updates are actually made. However, the update hook is called once for every commit that has been pushed to the destination repository.
 
-Finally, post-receive hook in the repository is invoked after the updates have been accepted into the destination repository. This is an ideal place to configure simple deployment scripts, invoke some continuous integration systems, dispatch notification emails to repository maintainers, etc.
+Finally, **post-receive hook** in the repository is invoked after the updates have been accepted into the destination repository. This is an ideal place to configure simple deployment scripts, invoke some continuous integration systems, dispatch notification emails to repository maintainers, etc.
 
-Hooks are local to every Git repository and are not versioned. Scripts can either be created within the hooks directory inside the “.git” directory, or they can be created elsewhere and links to those scripts can be placed within the directory.
+**Hooks are local to every Git repository and are not versioned**. Scripts can either be created within the hooks directory inside the “.git” directory, or they can be created elsewhere and links to those scripts can be placed within the directory.
